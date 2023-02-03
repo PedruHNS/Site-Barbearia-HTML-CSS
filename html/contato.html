@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagem/barbearia.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo_contato.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <div class="navegacao">
+            <h1><img class="logoheader" src="../imagem/logoblack.png" alt="logoback"></h1>
+            <nav>
+                <ul>
+                   <li><a href="home.html" target="_self" rel="prev">Home</a></li>
+                   <li><a href="produto.html" target="_self" rel="next">Produtos</a></li>
+                   <li><a href="contato.html" target="_self" rel="next">Contato</a></li> 
+                </ul>
+            </nav>
+        </div>    
+    </header>
+    
+    <main>
+        <form>
+            <fieldset>
+                <label for="nomecompleto">Nome Completo</label>
+                <input type="text" id="nomecompleto" class="input-padrao" placeholder="digite seu nome" required>
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input-padrao" placeholder="seunome@dominio.com" required>
+                
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" placeholder="(DDD)xxxxx-xxxx" required>
+                
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Como deseja ser contatado?</legend>
+                <div class="group-radio">
+                    <label class="radio" for="radio-email">
+                        <input type="radio" name="contato" value="email" id="radio-email" checked> E-mail
+                    </label>
+                    
+                    <label class="radio" for="radio-telefone">
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone
+                    </label>
+                    
+                    <label class="radio" for="radio-whatsapp"> 
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"> WhatsApp
+                    </label>
+            </fieldset>
+
+            <fieldset class="turnos">
+                <label for="select-turno">Qual horario deseja ser atendido?</label>
+                <select id="select-turno">
+                    <option>Turno da manhã</option>
+                    <option>Turno da tarde</option>
+                    <option>Turno da noite</option>
+                </select>
+            </fieldset>
+            
+            
+            <fieldset>
+                <label class="checkbox" for="checkbox-email">
+                    <input type="checkbox" id="checkbox-email" checked> Receber nossas novidades através e-mail?
+                </label>
+                
+                <label class="checkbox" for="checkbox-whatsapp">
+                    <input type="checkbox" id="checkbox-whatsapp" checked> Receber nossas novidades através do Whatsapp?
+                </label>
+            </fieldset>
+            <div class="button-submit">
+                <input type="submit" id="enviar" value="Enviar formulário">
+            </div>    
+        </form>
+    </main>
+    
+    <footer>
+        <img  class="logo_footer" src="../imagem/logoblack.png" alt="logo">
+        <ul class="redes_sociais">
+            <li><a href="https://www.instagram.com/pedro_siqui/" target="_blank" rel="external"><img src="../imagem/icone-instagram.png" alt="instagram"></a><p>Instagram</p></li>
+            <li><a href="https://linkedin.com/in/pedro-henrique-0a58351b8" target="_blank" rel="external"><img src="../imagem/icone-linkedin.png" alt="linkedin"></a><p>LinkedIn</p></li>
+            <li><a href="https://github.com/PedruHNS?tab=stars" target="_blank" rel="external"><img src="../imagem/icone-github.png" alt="github"></a><p>Github</p></li>
+        </ul>
+        <p id="copyright">&copy; Copyright Barbearia Papo-Reto - 2022</p>
+    </footer>
+</body>
+</html>
